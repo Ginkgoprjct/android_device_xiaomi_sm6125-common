@@ -394,3 +394,9 @@ on property:sys.boot_completed=1
     write /sys/block/zram0/use_dedup 1
     # Mount swap partitions specified in fstab
     swapon_all /vendor/etc/fstab.zram
+
+    # Setup cpu boosting
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1017600 4:1401600"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 100
+    write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:1804800 4:2016000"
+    write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 750
