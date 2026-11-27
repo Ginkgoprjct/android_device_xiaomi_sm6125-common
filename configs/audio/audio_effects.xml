@@ -41,6 +41,16 @@
         <library name="volume_listener" path="libvolumelistener.so"/>
         <library name="audiosphere" path="libasphere.so"/>
         <library name="shoebox" path="libshoebox.so"/>
+        <!--DOLBY DAP-->
+        <library name="dap" path="libswdap.so"/>
+        <library name="dvl" path="libdlbvol.so"/>
+        <!--DOLBY END-->
+        <!--DOLBY GAME-->
+        <library name="gamedap" path="libswgamedap.so"/>
+        <!--DOLBY END-->
+        <!--DOLBY VQE-->
+        <library name="vqe" path="libswvqe.so"/>
+        <!--DOLBY END-->
         <library name="misoundfx" path="libmisoundfx.so"/>
     </libraries>
     <effects>
